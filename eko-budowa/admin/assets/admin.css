@@ -1,0 +1,19 @@
+*{box-sizing:border-box}body{margin:0;font:1rem/1.5 system-ui,sans-serif;background:#f3f4f6;color:#111827}
+.ah{background:#064e3b;color:#fff;padding:.6rem 1rem;display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center}
+.ah nav{display:flex;flex-wrap:wrap;gap:.2rem;flex:1}.ah a{color:#d1fae5;text-decoration:none;padding:.45rem .7rem;border-radius:6px}.ah a.on,.ah a:hover{background:#047857;color:#fff}
+.am{max-width:900px;margin:0 auto;padding:1rem}h1{color:#064e3b;font-size:1.5rem}
+.card,.box{background:#fff;border-radius:12px;padding:1rem;margin-bottom:1rem;box-shadow:0 1px 4px #0002}
+label{display:block;margin:.7rem 0 0;font-weight:600}
+input,textarea,select{width:100%;padding:.75rem;margin-top:.25rem;border:1px solid #9ca3af;border-radius:8px;font:inherit;background:#fff}
+input[type=checkbox],input[type=radio]{width:auto;margin-right:.4rem}
+:focus-visible{outline:3px solid #10b981;outline-offset:2px}
+.b{background:#064e3b;color:#fff;border:0;border-radius:8px;padding:.8rem 1.2rem;font:inherit;font-weight:600;cursor:pointer;min-height:44px}
+.b.sm{padding:.4rem .8rem;min-height:36px}.b.gr{background:#e5e7eb;color:#111827}.b.red{background:#b91c1c}
+.row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem;align-items:center}
+.flash{padding:.8rem 1rem;border-radius:8px}.flash.ok{background:#d1fae5;color:#065f46}.flash.err{background:#fee2e2;color:#991b1b}
+.login{display:grid;place-items:center;min-height:100vh}.box{width:min(400px,92vw)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem}.tile img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.hero-b{background:#fef3c7;color:#92400e;border-radius:6px;padding:.1rem .5rem;font-size:.85rem}
+#drop{border:3px dashed #10b981;border-radius:12px;padding:2rem 1rem;text-align:center;background:#ecfdf5;display:block;cursor:pointer;font-weight:600}
+#drop.over{background:#a7f3d0}#drop.busy{opacity:.6}#drop input{display:none}
+.msg.new{border-left:6px solid #10b981}.muted{color:#6b7280}pre{white-space:pre-wrap;font:inherit;margin:.5rem 0}

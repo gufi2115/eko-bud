@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    container_name: eko-budowa
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - eko_data:/var/www/html/data
+      - eko_uploads:/var/www/html/uploads
+
+volumes:
+  eko_data:
+  eko_uploads:

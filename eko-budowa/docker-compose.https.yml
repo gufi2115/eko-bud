@@ -1,0 +1,27 @@
+# Użycie: docker compose -f docker-compose.yml -f docker-compose.https.yml up -d --build
+# Wymaga Docker Compose >= 2.24 (tag !reset).
+services:
+  web:
+    ports: !reset []
+    expose:
+      - "80"
+  caddy:
+    image: caddy:2
+    container_name: eko-caddy
+    restart: unless-stopped
+    depends_on:
+      - web
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - DOMAIN=${DOMAIN}
+      - ACME_EMAIL=${ADMIN_EMAIL}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
